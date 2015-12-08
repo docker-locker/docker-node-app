@@ -1,12 +1,12 @@
 {
   "name": "docker-node-app",
-  "version": "0.0.0",
-  "description": "",
+  "version": "0.0.1",
+  "description": "A dockerized node app.",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha"
   },
-  "author": "",
+  "author": "Renjith G R",
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.3"
