@@ -7,7 +7,7 @@ deployment:
     branch: master
     commands:
       - docker info
-      - docker build -t dockerdojo/node-express .
+      - docker build -t dockerdojo/node-express:$CIRCLE_BUILD_NUM .
       - docker images
       - docker login -e $DOCKER_EMAIL -u $DOCKER_USER -p $DOCKER_PASS
-      - docker push dockerdojo/node-express
+      - docker push dockerdojo/node-express:$CIRCLE_BUILD_NUM
